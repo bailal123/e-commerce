@@ -75,6 +75,11 @@ const HeroSection = ({
             <img
               src={slide.image}
               alt=""
+              loading={index === 0 ? 'eager' : 'lazy'}
+              fetchPriority={index === 0 ? 'high' : undefined}
+              decoding={index === 0 ? 'sync' : 'async'}
+              width={1920}
+              height={800}
               className="absolute inset-0 w-full h-full object-cover"
             />
             
@@ -184,20 +189,25 @@ const HeroSection = ({
 
       {/* Dots */}
       {slides.length > 1 && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
               className={clsx(
-                'h-2 rounded-full transition-all duration-300',
-                index === currentSlide 
-                  ? 'w-8 bg-white' 
-                  : 'w-2 bg-white/50 hover:bg-white/70'
+                'h-3 min-w-[44px] min-h-[44px] flex items-center justify-center',
+                'transition-all duration-300'
               )}
               aria-label={`الانتقال للشريحة ${index + 1}`}
               aria-current={index === currentSlide ? 'true' : 'false'}
-            />
+            >
+              <span className={clsx(
+                'block h-2 rounded-full transition-all duration-300',
+                index === currentSlide 
+                  ? 'w-8 bg-white' 
+                  : 'w-2 bg-white/50 hover:bg-white/70'
+              )} />
+            </button>
           ))}
         </div>
       )}

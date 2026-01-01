@@ -87,7 +87,7 @@ const Footer = () => {
                 <Input
                   type="email"
                   placeholder="بريدك الإلكتروني"
-                  className="bg-neutral-800 border-neutral-700"
+                  className="bg-neutral-800 border-neutral-700 placeholder:text-neutral-400"
                 />
                 <Button variant="primary">اشتراك</Button>
               </div>
@@ -185,14 +185,14 @@ const Footer = () => {
       <div className="border-t border-neutral-800">
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-400">
               طرق الدفع المعتمدة:
             </p>
             <div className="flex items-center gap-4">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-6 opacity-70" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-8 opacity-70" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-5 opacity-70" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="h-6 opacity-70 invert" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" width="48" height="24" className="h-6 w-auto opacity-80" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" width="52" height="32" className="h-8 w-auto opacity-80" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" width="60" height="20" className="h-5 w-auto opacity-80" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" width="24" height="24" className="h-6 w-auto opacity-80 invert" />
             </div>
           </div>
         </div>
@@ -201,14 +201,14 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-neutral-800">
         <div className="container-custom py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-400">
             <p>© {currentYear} سوق. جميع الحقوق محفوظة.</p>
             <div className="flex items-center gap-6">
               {footerLinks.legal.map((link) => (
                 <Link 
                   key={link.name}
                   to={link.href}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors text-neutral-400"
                 >
                   {link.name}
                 </Link>

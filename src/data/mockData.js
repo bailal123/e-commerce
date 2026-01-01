@@ -414,8 +414,8 @@ export const products = [
       مقابض مقاومة للحرارة.
     `,
     images: [
-      'https://images.unsplash.com/photo-1584990347449-a2d4c2c044c9?w=800&h=800&fit=crop',
       'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&h=800&fit=crop',
     ],
     price: 899,
     salePrice: 699,
