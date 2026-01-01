@@ -40,7 +40,7 @@ const TestimonialCard = ({
             className="ring-2 ring-white/20"
           />
           <div>
-            <h4 className="font-semibold">{name}</h4>
+            <p className="font-semibold">{name}</p>
             {role && <p className="text-white/80 text-sm">{role}</p>}
             <Rating value={rating} size="sm" className="mt-1" />
           </div>
@@ -75,9 +75,9 @@ const TestimonialCard = ({
           size="md"
         />
         <div>
-          <h4 className="font-medium text-neutral-900 dark:text-neutral-100">
+          <p className="font-medium text-neutral-900 dark:text-neutral-100">
             {name}
-          </h4>
+          </p>
           {role && (
             <p className="text-sm text-neutral-500">{role}</p>
           )}

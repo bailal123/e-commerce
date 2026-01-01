@@ -2,9 +2,24 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
+// Plugin to make CSS non-render-blocking
+const asyncCssPlugin = () => ({
+  name: 'async-css',
+  transformIndexHtml(html) {
+    // Convert CSS links to preload + onload pattern
+    return html.replace(
+      /<link rel="stylesheet"([^>]*href="[^"]*\.css"[^>]*)>/g,
+      '<link rel="preload" as="style"$1 onload="this.onload=null;this.rel=\'stylesheet\'"><noscript><link rel="stylesheet"$1></noscript>'
+    )
+  }
+})
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    asyncCssPlugin(),
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
