@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { clsx } from 'clsx'
-import { Button, Badge } from '../atoms'
+import { Button, Badge, Image } from '../atoms'
+import { optimizeImageUrl } from '../atoms/Image'
 
 const PromoBanner = ({
   variant = 'default', // default | split | minimal | countdown
@@ -73,8 +74,12 @@ const PromoBanner = ({
           {image && (
             <div className="relative h-64 md:h-full">
               <img
-                src={image}
+                src={optimizeImageUrl(image, { width: 672, height: 448, quality: 75 })}
                 alt=""
+                loading="lazy"
+                decoding="async"
+                width={672}
+                height={448}
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>

@@ -109,7 +109,7 @@ const HomePage = () => {
             subtitle="خصم يصل إلى 50%"
             description="استمتع بأفضل العروض على الإلكترونيات والأزياء والمزيد. العرض ساري لفترة محدودة."
             badge="عرض حصري"
-            image="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800"
+            image="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=672&h=448&fit=crop&auto=format&q=75"
             cta={{ text: 'تسوق الآن', href: '/deals' }}
           />
         </div>
