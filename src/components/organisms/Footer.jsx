@@ -87,7 +87,7 @@ const Footer = () => {
                 <Input
                   type="email"
                   placeholder="بريدك الإلكتروني"
-                  className="bg-neutral-800 border-neutral-700 placeholder:text-neutral-400"
+                  className="bg-neutral-800 border-neutral-600 text-white placeholder:text-neutral-300"
                 />
                 <Button variant="primary">اشتراك</Button>
               </div>

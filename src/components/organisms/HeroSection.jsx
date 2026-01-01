@@ -74,12 +74,14 @@ const HeroSection = ({
             {/* Background Image */}
             <img
               src={slide.image}
+              srcSet={slide.imageSrcSet}
+              sizes="100vw"
               alt=""
               loading={index === 0 ? 'eager' : 'lazy'}
               fetchPriority={index === 0 ? 'high' : undefined}
               decoding={index === 0 ? 'sync' : 'async'}
-              width={1920}
-              height={800}
+              width={1200}
+              height={600}
               className="absolute inset-0 w-full h-full object-cover"
             />
             

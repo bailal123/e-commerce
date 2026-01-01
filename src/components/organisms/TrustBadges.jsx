@@ -123,9 +123,9 @@ const TrustBadges = ({
                 <badge.icon className={clsx('w-6 h-6', badge.color)} />
               </div>
               <div>
-                <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">
+                <p className="font-semibold text-neutral-900 dark:text-neutral-100">
                   {badge.title}
-                </h3>
+                </p>
                 <p className="text-sm text-neutral-500">
                   {badge.description}
                 </p>
