@@ -61,7 +61,7 @@ const Footer = () => {
                   <feature.icon className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white">{feature.title}</h4>
+                  <p className="font-semibold text-white">{feature.title}</p>
                   <p className="text-sm text-neutral-400">{feature.desc}</p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Footer = () => {
 
             {/* Newsletter */}
             <div className="space-y-3">
-              <h4 className="font-semibold text-white">اشترك في النشرة البريدية</h4>
+              <p className="font-semibold text-white">اشترك في النشرة البريدية</p>
               <div className="flex gap-2">
                 <Input
                   type="email"
@@ -113,7 +113,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">الشركة</h4>
+            <p className="font-semibold text-white mb-4">الشركة</p>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -129,7 +129,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">الدعم</h4>
+            <p className="font-semibold text-white mb-4">الدعم</p>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
@@ -145,7 +145,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">للتجار</h4>
+            <p className="font-semibold text-white mb-4">للتجار</p>
             <ul className="space-y-3">
               {footerLinks.vendors.map((link) => (
                 <li key={link.name}>
@@ -162,7 +162,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-white mb-4">تواصل معنا</h4>
+            <p className="font-semibold text-white mb-4">تواصل معنا</p>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-neutral-400">
                 <Phone className="w-4 h-4" />
