@@ -20,7 +20,6 @@ export default defineConfig({
   build: {
     // Optimize CSS
     cssCodeSplit: true,
-    cssMinify: 'lightningcss',
     // Smaller chunks for faster parsing
     chunkSizeWarningLimit: 500,
     rollupOptions: {
@@ -33,14 +32,6 @@ export default defineConfig({
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
-      },
-    },
-    // Enable minification
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
       },
     },
   },
