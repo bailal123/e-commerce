@@ -1,0 +1,10 @@
+// Organisms - Complex components composed of molecules and atoms
+export { default as Header } from './Header'
+export { default as Footer } from './Footer'
+export { default as HeroSection } from './HeroSection'
+export { default as ProductGrid } from './ProductGrid'
+export { default as CategoryGrid } from './CategoryGrid'
+export { default as VendorShowcase } from './VendorShowcase'
+export { default as Testimonials } from './Testimonials'
+export { default as TrustBadges } from './TrustBadges'
+export { default as PromoBanner } from './PromoBanner'
