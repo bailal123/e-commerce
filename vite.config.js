@@ -18,12 +18,29 @@ export default defineConfig({
     },
   },
   build: {
+    // Optimize CSS
+    cssCodeSplit: true,
+    cssMinify: 'lightningcss',
+    // Smaller chunks for faster parsing
+    chunkSizeWarningLimit: 500,
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           icons: ['lucide-react'],
         },
+        // Optimize chunk names for caching
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
+      },
+    },
+    // Enable minification
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
       },
     },
   },

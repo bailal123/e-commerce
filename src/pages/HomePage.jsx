@@ -1,6 +1,8 @@
+import { useState, useEffect } from 'react'
 import { MainLayout } from '../components/templates'
 import {
   HeroSection,
+  MobileHero,
   CategoryGrid,
   ProductGrid,
   VendorShowcase,
@@ -20,7 +22,27 @@ import {
 const featuredProducts = products.filter(p => p.featured)
 const newProducts = products.filter(p => p.isNew)
 
+// Mobile hero data optimized for fast LCP
+const mobileHeroSlide = {
+  ...heroSlides[0],
+  mobileImage: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=480&h=360&fit=crop&auto=format&q=80',
+  cta: { text: 'تسوق الآن', href: '/category/sale' },
+}
+
 const HomePage = () => {
+  // Detect mobile for optimized hero rendering
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768
+    }
+    return false
+  })
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   // Schema.org structured data for the homepage
   const structuredData = {
     '@context': 'https://schema.org',
@@ -41,8 +63,12 @@ const HomePage = () => {
       description="اكتشف آلاف المنتجات من مئات التجار المميزين. أفضل الأسعار وخدمة توصيل سريعة."
       structuredData={structuredData}
     >
-      {/* Hero Section */}
-      <HeroSection slides={heroSlides} />
+      {/* Hero Section - Optimized: Simple hero on mobile, Full carousel on desktop */}
+      {isMobile ? (
+        <MobileHero slide={mobileHeroSlide} />
+      ) : (
+        <HeroSection slides={heroSlides} />
+      )}
 
       {/* Trust Badges */}
       <TrustBadges variant="default" />

@@ -2,6 +2,7 @@
 export { default as Header } from './Header'
 export { default as Footer } from './Footer'
 export { default as HeroSection } from './HeroSection'
+export { default as MobileHero } from './MobileHero'
 export { default as ProductGrid } from './ProductGrid'
 export { default as CategoryGrid } from './CategoryGrid'
 export { default as VendorShowcase } from './VendorShowcase'

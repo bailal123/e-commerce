@@ -12,6 +12,15 @@ const HeroSection = ({
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Detect mobile for optimized image loading
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const goToSlide = useCallback((index) => {
     if (isAnimating) return

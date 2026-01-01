@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Performance: Content-visibility for below-fold sections */
 @layer base {
   * {
     @apply border-neutral-200 dark:border-neutral-700;
@@ -11,10 +12,18 @@
     @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100;
     @apply font-arabic antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    /* Prevent layout shift */
+    overflow-x: hidden;
   }
   
   html {
     scroll-behavior: smooth;
+  }
+  
+  /* Performance: Reduce paint for below-fold content */
+  .section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
   }
   
   /* Custom scrollbar */

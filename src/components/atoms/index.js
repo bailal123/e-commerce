@@ -13,3 +13,10 @@ export {
   VendorCardSkeleton,
   CategoryCardSkeleton 
 } from './Skeleton'
+export { 
+  default as PaymentIcons,
+  VisaIcon,
+  MastercardIcon,
+  PayPalIcon,
+  ApplePayIcon 
+} from './PaymentIcons'
