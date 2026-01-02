@@ -18,9 +18,9 @@ import {
   testimonials 
 } from '../data/mockData'
 
-// Filter products for different sections
-const featuredProducts = products.filter(p => p.featured)
-const newProducts = products.filter(p => p.isNew)
+// Filter products for different sections (limit to 8 for homepage)
+const featuredProducts = products.filter(p => p.featured).slice(0, 8)
+const newProducts = products.filter(p => p.isNew).slice(0, 8)
 
 // Mobile hero data optimized for fast LCP
 const mobileHeroSlide = {
@@ -94,7 +94,7 @@ const HomePage = () => {
             products={featuredProducts}
             title="منتجات مميزة"
             subtitle="أفضل المنتجات المختارة لك"
-            viewAllLink="/products?filter=featured"
+            viewAllLink="/shop?filter=featured"
             variant="carousel"
           />
         </div>
@@ -122,8 +122,8 @@ const HomePage = () => {
             products={newProducts}
             title="وصل حديثاً"
             subtitle="أحدث المنتجات في المتجر"
-            viewAllLink="/products?filter=new"
-            columns={5}
+            viewAllLink="/shop?filter=new"
+            columns={4}
           />
         </div>
       </section>

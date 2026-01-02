@@ -5,6 +5,7 @@ import { Spinner } from './components/atoms'
 // Lazy load pages for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'))
 const CategoryPage = lazy(() => import('./pages/CategoryPage'))
+const ShopPage = lazy(() => import('./pages/ShopPage'))
 const VendorStorePage = lazy(() => import('./pages/VendorStorePage'))
 const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'))
 const CartPage = lazy(() => import('./pages/CartPage'))
@@ -85,8 +86,10 @@ function App() {
         <Route path="/order-success" element={<OrderSuccessPage />} />
         <Route path="/categories" element={<CategoryPage />} />
         <Route path="/vendors" element={<VendorStorePage />} />
-        <Route path="/deals" element={<CategoryPage />} />
-        <Route path="/new-arrivals" element={<CategoryPage />} />
+        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/products" element={<ShopPage />} />
+        <Route path="/deals" element={<ShopPage />} />
+        <Route path="/new-arrivals" element={<ShopPage />} />
         <Route path="/search" element={<CategoryPage />} />
         
         {/* 404 */}

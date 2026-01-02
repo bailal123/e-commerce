@@ -361,7 +361,7 @@ export const products = [
   {
     id: 4,
     name: 'فستان سهرة أنيق',
-    slug: 'elegant-evening-dress',
+    slug: 'product-2',
     description: 'فستان سهرة نسائي مطرز بتصميم عصري',
     longDescription: `
       فستان سهرة أنيق بتصميم عصري وتطريز يدوي فاخر.
@@ -600,8 +600,8 @@ export const products = [
   // ======== منتجات جديدة من الصور المحلية ========
   {
     id: 101,
-    name: 'طقم ملابس أطفال صيفي',
-    slug: 'kids-summer-outfit-set',
+    name: 'منتج 1',
+    slug: 'product-1',
     description: 'طقم ملابس أطفال مريح وعصري للصيف، قطن 100%',
     longDescription: `
       طقم ملابس أطفال صيفي مصنوع من القطن الطبيعي 100%.
@@ -638,8 +638,8 @@ export const products = [
   },
   {
     id: 102,
-    name: 'فستان سهرة أنيق',
-    slug: 'elegant-evening-dress',
+    name: 'منتج 2',
+    slug: 'product-2',
     description: 'فستان سهرة فاخر بتصميم عصري مناسب للمناسبات',
     longDescription: `
       فستان سهرة أنيق بتصميم راقٍ.
@@ -677,8 +677,8 @@ export const products = [
   },
   {
     id: 103,
-    name: 'حقيبة يد جلدية فاخرة',
-    slug: 'luxury-leather-handbag',
+    name: 'منتج 3',
+    slug: 'product-3',
     description: 'حقيبة يد نسائية من الجلد الطبيعي بتصميم إيطالي',
     longDescription: `
       حقيبة يد فاخرة من الجلد الطبيعي 100%.
@@ -714,8 +714,8 @@ export const products = [
   },
   {
     id: 104,
-    name: 'ساعة رجالية كلاسيكية',
-    slug: 'classic-mens-watch',
+    name: 'منتج 4',
+    slug: 'product-4',
     description: 'ساعة يد رجالية بتصميم كلاسيكي أنيق مع حزام جلدي',
     longDescription: `
       ساعة رجالية فاخرة بتصميم كلاسيكي خالد.
@@ -750,8 +750,8 @@ export const products = [
   },
   {
     id: 105,
-    name: 'نظارات شمسية ريبان',
-    slug: 'rayban-sunglasses',
+    name: 'منتج 5',
+    slug: 'product-5',
     description: 'نظارات شمسية أصلية بعدسات مستقطبة وحماية UV400',
     longDescription: `
       نظارات شمسية أصلية من ريبان.
@@ -787,8 +787,8 @@ export const products = [
   },
   {
     id: 106,
-    name: 'عطر عود فاخر',
-    slug: 'luxury-oud-perfume',
+    name: 'منتج 6',
+    slug: 'product-6',
     description: 'عطر عود عربي فاخر برائحة طويلة الأمد',
     longDescription: `
       عطر عود فاخر بتركيبة حصرية.
@@ -820,8 +820,8 @@ export const products = [
   },
   {
     id: 107,
-    name: 'طقم مجوهرات فضية',
-    slug: 'silver-jewelry-set',
+    name: 'منتج 7',
+    slug: 'product-7',
     description: 'طقم مجوهرات من الفضة الإيطالية مع أحجار كريمة',
     longDescription: `
       طقم مجوهرات أنيق من الفضة الإيطالية عيار 925.
@@ -857,8 +857,8 @@ export const products = [
   },
   {
     id: 108,
-    name: 'حذاء رياضي نايك',
-    slug: 'nike-sports-shoes',
+    name: 'منتج 8',
+    slug: 'product-8',
     description: 'حذاء رياضي مريح للجري والتمارين اليومية',
     longDescription: `
       حذاء رياضي من نايك بتقنية Air Max.
@@ -895,8 +895,8 @@ export const products = [
   },
   {
     id: 109,
-    name: 'سماعة بلوتوث JBL',
-    slug: 'jbl-bluetooth-speaker',
+    name: 'منتج 9',
+    slug: 'product-9',
     description: 'سماعة بلوتوث محمولة بصوت قوي ومقاومة للماء',
     longDescription: `
       سماعة JBL بلوتوث لاسلكية.
@@ -933,8 +933,8 @@ export const products = [
   },
   {
     id: 110,
-    name: 'كريم عناية بالبشرة',
-    slug: 'skincare-cream-set',
+    name: 'منتج 10',
+    slug: 'product-10',
     description: 'مجموعة كريمات عناية بالبشرة طبيعية 100%',
     longDescription: `
       مجموعة كريمات عناية بالبشرة.
@@ -963,8 +963,8 @@ export const products = [
   },
   {
     id: 111,
-    name: 'قهوة عربية فاخرة',
-    slug: 'premium-arabic-coffee',
+    name: 'منتج 11',
+    slug: 'product-11',
     description: 'قهوة عربية بالهيل والزعفران من أجود الأنواع',
     longDescription: `
       قهوة عربية فاخرة محمصة بعناية.
@@ -996,8 +996,8 @@ export const products = [
   },
   {
     id: 112,
-    name: 'طقم أواني طبخ',
-    slug: 'cooking-pots-set',
+    name: 'منتج 12',
+    slug: 'product-12',
     description: 'طقم أواني طبخ ستانلس ستيل عالي الجودة 10 قطع',
     longDescription: `
       طقم أواني طبخ من الستانلس ستيل.
@@ -1026,8 +1026,8 @@ export const products = [
   },
   {
     id: 113,
-    name: 'لعبة تعليمية للأطفال',
-    slug: 'educational-kids-toy',
+    name: 'منتج 13',
+    slug: 'product-13',
     description: 'لعبة تعليمية تفاعلية لتنمية مهارات الأطفال',
     longDescription: `
       لعبة تعليمية تفاعلية.
@@ -1056,8 +1056,8 @@ export const products = [
   },
   {
     id: 114,
-    name: 'كتاب تطوير الذات',
-    slug: 'self-development-book',
+    name: 'منتج 14',
+    slug: 'product-14',
     description: 'كتاب ملهم لتطوير الذات وتحقيق النجاح',
     longDescription: `
       كتاب تطوير ذات من أكثر الكتب مبيعاً.
@@ -1086,8 +1086,8 @@ export const products = [
   },
   {
     id: 115,
-    name: 'جهاز تمارين منزلي',
-    slug: 'home-fitness-equipment',
+    name: 'منتج 15',
+    slug: 'product-15',
     description: 'جهاز تمارين منزلي متعدد الوظائف للياقة البدنية',
     longDescription: `
       جهاز تمارين منزلي شامل.
@@ -1116,8 +1116,8 @@ export const products = [
   },
   {
     id: 116,
-    name: 'شنطة سفر بعجلات',
-    slug: 'travel-luggage-trolley',
+    name: 'منتج 16',
+    slug: 'product-16',
     description: 'شنطة سفر بعجلات متينة وخفيفة الوزن',
     longDescription: `
       شنطة سفر بعجلات 360 درجة.
@@ -1154,8 +1154,8 @@ export const products = [
   },
   {
     id: 117,
-    name: 'مكياج كامل طقم',
-    slug: 'complete-makeup-set',
+    name: 'منتج 17',
+    slug: 'product-17',
     description: 'طقم مكياج كامل للمبتدئين والمحترفين',
     longDescription: `
       طقم مكياج شامل يحتوي على كل ما تحتاجينه.
@@ -1185,8 +1185,8 @@ export const products = [
   },
   {
     id: 118,
-    name: 'سجادة صلاة فاخرة',
-    slug: 'premium-prayer-rug',
+    name: 'منتج 18',
+    slug: 'product-18',
     description: 'سجادة صلاة فاخرة بنقوش إسلامية أنيقة',
     longDescription: `
       سجادة صلاة فاخرة بتصميم إسلامي.
@@ -1222,8 +1222,8 @@ export const products = [
   },
   {
     id: 119,
-    name: 'طابعة ليزر HP',
-    slug: 'hp-laser-printer',
+    name: 'منتج 19',
+    slug: 'product-19',
     description: 'طابعة ليزر سريعة للمكاتب والمنازل',
     longDescription: `
       طابعة HP ليزر لاسلكية.
@@ -1252,8 +1252,8 @@ export const products = [
   },
   {
     id: 120,
-    name: 'عباية مطرزة فاخرة',
-    slug: 'embroidered-abaya',
+    name: 'منتج 20',
+    slug: 'product-20',
     description: 'عباية نسائية مطرزة بتصميم عصري وأنيق',
     longDescription: `
       عباية فاخرة بتطريز يدوي.
@@ -1289,7 +1289,588 @@ export const products = [
     isNew: true,
     createdAt: '2026-01-02',
   },
-
+  // ======== منتجات إضافية 21-40 ========
+  {
+    id: 121,
+    name: 'منتج 21',
+    slug: 'product-21',
+    description: 'وصف المنتج 21',
+    longDescription: `
+      وصف تفصيلي للمنتج 21.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0055.jpg',
+      '/products/IMG-20260102-WA0056.jpg',
+    ],
+    price: 199,
+    salePrice: 149,
+    currency: 'AED',
+    category: categories[0],
+    vendor: vendors[0],
+    rating: 4.7,
+    reviewCount: 45,
+    stock: 60,
+    sku: 'PROD-021',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['جديد', 'خصم'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 122,
+    name: 'منتج 22',
+    slug: 'product-22',
+    description: 'وصف المنتج 22',
+    longDescription: `
+      وصف تفصيلي للمنتج 22.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0057.jpg',
+      '/products/IMG-20260102-WA0058.jpg',
+    ],
+    price: 299,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[1],
+    vendor: vendors[1],
+    rating: 4.8,
+    reviewCount: 78,
+    stock: 45,
+    sku: 'PROD-022',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['جديد'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 123,
+    name: 'منتج 23',
+    slug: 'product-23',
+    description: 'وصف المنتج 23',
+    longDescription: `
+      وصف تفصيلي للمنتج 23.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0059.jpg',
+      '/products/IMG-20260102-WA0060.jpg',
+    ],
+    price: 399,
+    salePrice: 299,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.6,
+    reviewCount: 56,
+    stock: 30,
+    sku: 'PROD-023',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 124,
+    name: 'منتج 24',
+    slug: 'product-24',
+    description: 'وصف المنتج 24',
+    longDescription: `
+      وصف تفصيلي للمنتج 24.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0061.jpg',
+      '/products/IMG-20260102-WA0062.jpg',
+    ],
+    price: 499,
+    salePrice: 399,
+    currency: 'AED',
+    category: categories[3],
+    vendor: vendors[2],
+    rating: 4.9,
+    reviewCount: 123,
+    stock: 25,
+    sku: 'PROD-024',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 125,
+    name: 'منتج 25',
+    slug: 'product-25',
+    description: 'وصف المنتج 25',
+    longDescription: `
+      وصف تفصيلي للمنتج 25.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0063.jpg',
+      '/products/IMG-20260102-WA0064.jpg',
+    ],
+    price: 159,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[4],
+    vendor: vendors[3],
+    rating: 4.5,
+    reviewCount: 67,
+    stock: 80,
+    sku: 'PROD-025',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['جديد'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 126,
+    name: 'منتج 26',
+    slug: 'product-26',
+    description: 'وصف المنتج 26',
+    longDescription: `
+      وصف تفصيلي للمنتج 26.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0065.jpg',
+      '/products/IMG-20260102-WA0066.jpg',
+    ],
+    price: 699,
+    salePrice: 549,
+    currency: 'AED',
+    category: categories[5],
+    vendor: vendors[0],
+    rating: 4.7,
+    reviewCount: 89,
+    stock: 40,
+    sku: 'PROD-026',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 127,
+    name: 'منتج 27',
+    slug: 'product-27',
+    description: 'وصف المنتج 27',
+    longDescription: `
+      وصف تفصيلي للمنتج 27.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0067.jpg',
+      '/products/IMG-20260102-WA0068.jpg',
+    ],
+    price: 249,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[6],
+    vendor: vendors[2],
+    rating: 4.8,
+    reviewCount: 112,
+    stock: 100,
+    sku: 'PROD-027',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['الأكثر مبيعاً'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 128,
+    name: 'منتج 28',
+    slug: 'product-28',
+    description: 'وصف المنتج 28',
+    longDescription: `
+      وصف تفصيلي للمنتج 28.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0069.jpg',
+      '/products/IMG-20260102-WA0070.jpg',
+    ],
+    price: 349,
+    salePrice: 279,
+    currency: 'AED',
+    category: categories[7],
+    vendor: vendors[2],
+    rating: 4.6,
+    reviewCount: 45,
+    stock: 55,
+    sku: 'PROD-028',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'أطفال'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 129,
+    name: 'منتج 29',
+    slug: 'product-29',
+    description: 'وصف المنتج 29',
+    longDescription: `
+      وصف تفصيلي للمنتج 29.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0071.jpg',
+      '/products/IMG-20260102-WA0072.jpg',
+    ],
+    price: 899,
+    salePrice: 749,
+    currency: 'AED',
+    category: categories[0],
+    vendor: vendors[0],
+    rating: 4.9,
+    reviewCount: 156,
+    stock: 20,
+    sku: 'PROD-029',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'فاخر'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 130,
+    name: 'منتج 30',
+    slug: 'product-30',
+    description: 'وصف المنتج 30',
+    longDescription: `
+      وصف تفصيلي للمنتج 30.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0073.jpg',
+      '/products/IMG-20260102-WA0074.jpg',
+    ],
+    price: 129,
+    salePrice: 99,
+    currency: 'AED',
+    category: categories[1],
+    vendor: vendors[1],
+    rating: 4.5,
+    reviewCount: 78,
+    stock: 120,
+    sku: 'PROD-030',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 131,
+    name: 'منتج 31',
+    slug: 'product-31',
+    description: 'وصف المنتج 31',
+    longDescription: `
+      وصف تفصيلي للمنتج 31.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0075.jpg',
+      '/products/IMG-20260102-WA0076.jpg',
+    ],
+    price: 599,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.8,
+    reviewCount: 92,
+    stock: 35,
+    sku: 'PROD-031',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['فاخر'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 132,
+    name: 'منتج 32',
+    slug: 'product-32',
+    description: 'وصف المنتج 32',
+    longDescription: `
+      وصف تفصيلي للمنتج 32.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0077.jpg',
+      '/products/IMG-20260102-WA0078.jpg',
+    ],
+    price: 449,
+    salePrice: 349,
+    currency: 'AED',
+    category: categories[3],
+    vendor: vendors[2],
+    rating: 4.7,
+    reviewCount: 67,
+    stock: 50,
+    sku: 'PROD-032',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 133,
+    name: 'منتج 33',
+    slug: 'product-33',
+    description: 'وصف المنتج 33',
+    longDescription: `
+      وصف تفصيلي للمنتج 33.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0079.jpg',
+      '/products/IMG-20260102-WA0080.jpg',
+    ],
+    price: 189,
+    salePrice: 149,
+    currency: 'AED',
+    category: categories[4],
+    vendor: vendors[3],
+    rating: 4.6,
+    reviewCount: 134,
+    stock: 75,
+    sku: 'PROD-033',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'طبيعي'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 134,
+    name: 'منتج 34',
+    slug: 'product-34',
+    description: 'وصف المنتج 34',
+    longDescription: `
+      وصف تفصيلي للمنتج 34.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0081.jpg',
+      '/products/IMG-20260102-WA0082.jpg',
+    ],
+    price: 799,
+    salePrice: 649,
+    currency: 'AED',
+    category: categories[5],
+    vendor: vendors[0],
+    rating: 4.8,
+    reviewCount: 89,
+    stock: 30,
+    sku: 'PROD-034',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'رياضي'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 135,
+    name: 'منتج 35',
+    slug: 'product-35',
+    description: 'وصف المنتج 35',
+    longDescription: `
+      وصف تفصيلي للمنتج 35.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0083.jpg',
+      '/products/IMG-20260102-WA0084.jpg',
+    ],
+    price: 69,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[6],
+    vendor: vendors[2],
+    rating: 4.9,
+    reviewCount: 245,
+    stock: 200,
+    sku: 'PROD-035',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 136,
+    name: 'منتج 36',
+    slug: 'product-36',
+    description: 'وصف المنتج 36',
+    longDescription: `
+      وصف تفصيلي للمنتج 36.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0085.jpg',
+      '/products/IMG-20260102-WA0086.jpg',
+    ],
+    price: 279,
+    salePrice: 219,
+    currency: 'AED',
+    category: categories[7],
+    vendor: vendors[2],
+    rating: 4.7,
+    reviewCount: 98,
+    stock: 65,
+    sku: 'PROD-036',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'أطفال'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 137,
+    name: 'منتج 37',
+    slug: 'product-37',
+    description: 'وصف المنتج 37',
+    longDescription: `
+      وصف تفصيلي للمنتج 37.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0087.jpg',
+      '/products/IMG-20260102-WA0088.jpg',
+    ],
+    price: 1299,
+    salePrice: 999,
+    currency: 'AED',
+    category: categories[0],
+    vendor: vendors[0],
+    rating: 4.9,
+    reviewCount: 178,
+    stock: 15,
+    sku: 'PROD-037',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'فاخر'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 138,
+    name: 'منتج 38',
+    slug: 'product-38',
+    description: 'وصف المنتج 38',
+    longDescription: `
+      وصف تفصيلي للمنتج 38.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0089.jpg',
+      '/products/IMG-20260102-WA0090.jpg',
+    ],
+    price: 359,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[1],
+    vendor: vendors[1],
+    rating: 4.6,
+    reviewCount: 56,
+    stock: 45,
+    sku: 'PROD-038',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['جديد'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 139,
+    name: 'منتج 39',
+    slug: 'product-39',
+    description: 'وصف المنتج 39',
+    longDescription: `
+      وصف تفصيلي للمنتج 39.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0091.jpg',
+      '/products/IMG-20260102-WA0092.jpg',
+    ],
+    price: 549,
+    salePrice: 429,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.8,
+    reviewCount: 123,
+    stock: 40,
+    sku: 'PROD-039',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم', 'فاخر'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 140,
+    name: 'منتج 40',
+    slug: 'product-40',
+    description: 'وصف المنتج 40',
+    longDescription: `
+      وصف تفصيلي للمنتج 40.
+      منتج عالي الجودة.
+      مناسب للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0093.jpg',
+      '/products/IMG-20260102-WA0094.jpg',
+    ],
+    price: 429,
+    salePrice: 349,
+    currency: 'AED',
+    category: categories[3],
+    vendor: vendors[2],
+    rating: 4.7,
+    reviewCount: 87,
+    stock: 55,
+    sku: 'PROD-040',
+    features: ['جودة عالية', 'ضمان سنة'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+]
 // Reviews
 export const reviews = [
   {
@@ -1425,10 +2006,11 @@ export const filterOptions = {
 // Navigation
 export const mainNavigation = [
   { name: 'الرئيسية', href: '/' },
+  { name: 'المتجر', href: '/shop' },
   { name: 'الأقسام', href: '/categories', hasDropdown: true },
-  { name: 'المتاجر', href: '/vendors' },
-  { name: 'العروض', href: '/deals' },
-  { name: 'جديدنا', href: '/new-arrivals' },
+  { name: 'التجار', href: '/vendors' },
+  { name: 'العروض', href: '/shop?filter=sale' },
+  { name: 'وصل حديثاً', href: '/shop?filter=new' },
 ]
 
 // Footer Links
