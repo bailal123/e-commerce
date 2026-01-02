@@ -235,15 +235,17 @@ const Header = () => {
         {isMenuOpen && (
           <>
             <div 
-              className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+              className="fixed inset-0 bg-black/50 z-40 lg:hidden animate-fade-in"
               onClick={() => setIsMenuOpen(false)}
             />
-            <div className="fixed top-0 right-0 bottom-0 w-80 bg-white dark:bg-neutral-900 z-50 lg:hidden animate-slide-down overflow-y-auto">
-              <div className="p-4 border-b border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
+            <div className="fixed top-0 right-0 bottom-0 w-[85%] max-w-sm bg-white dark:bg-neutral-900 z-50 lg:hidden animate-slide-in-right overflow-y-auto shadow-2xl">
+              {/* Header */}
+              <div className="sticky top-0 bg-white dark:bg-neutral-900 p-4 border-b border-neutral-100 dark:border-neutral-800 flex items-center justify-between z-10">
                 <Logo size="sm" />
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="p-2 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                  className="p-2 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                  aria-label="إغلاق القائمة"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -255,7 +257,13 @@ const Header = () => {
                   <Avatar name="أحمد" size="lg" />
                   <div>
                     <p className="font-medium">مرحباً، أحمد</p>
-                    <Link to="/account" className="text-sm text-primary-600">عرض الحساب</Link>
+                    <Link 
+                      to="/account" 
+                      className="text-sm text-primary-600"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      عرض الحساب
+                    </Link>
                   </div>
                 </div>
 
@@ -265,6 +273,7 @@ const Header = () => {
                     <Link
                       key={link.name}
                       to={link.href}
+                      onClick={() => setIsMenuOpen(false)}
                       className={clsx(
                         'flex items-center justify-between px-4 py-3 rounded-xl transition-colors',
                         'hover:bg-neutral-100 dark:hover:bg-neutral-800',
@@ -279,7 +288,7 @@ const Header = () => {
 
                 {/* Categories */}
                 <div className="mt-6 pt-6 border-t border-neutral-100 dark:border-neutral-800">
-                  <h3 className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-3">
+                  <h3 className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-3 px-4">
                     الأقسام
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
@@ -287,13 +296,25 @@ const Header = () => {
                       <Link
                         key={cat.slug}
                         to={`/category/${cat.slug}`}
+                        onClick={() => setIsMenuOpen(false)}
                         className="flex items-center gap-2 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
                       >
-                        <span>{cat.icon}</span>
-                        <span className="text-sm">{cat.name}</span>
+                        <span className="text-xl">{cat.icon}</span>
+                        <span className="text-sm font-medium">{cat.name}</span>
                       </Link>
                     ))}
                   </div>
+                </div>
+
+                {/* Shop Link */}
+                <div className="mt-4">
+                  <Link
+                    to="/shop"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-center gap-2 w-full p-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-medium transition-colors"
+                  >
+                    <span>تصفح جميع المنتجات</span>
+                  </Link>
                 </div>
 
                 {/* Actions */}
@@ -305,6 +326,31 @@ const Header = () => {
                     {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
                     <span>{theme === 'dark' ? 'الوضع الفاتح' : 'الوضع الداكن'}</span>
                   </button>
+                  
+                  {/* Cart in mobile menu */}
+                  <Link
+                    to="/cart"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="w-full flex items-center justify-between px-4 py-3 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <ShoppingCart className="w-5 h-5" />
+                      <span>سلة التسوق</span>
+                    </div>
+                    {cartCount > 0 && (
+                      <Badge variant="accent">{cartCount}</Badge>
+                    )}
+                  </Link>
+                  
+                  {/* Wishlist in mobile menu */}
+                  <Link
+                    to="/wishlist"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                  >
+                    <Heart className="w-5 h-5" />
+                    <span>المفضلة</span>
+                  </Link>
                 </div>
               </div>
             </div>
