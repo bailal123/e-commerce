@@ -597,7 +597,698 @@ export const products = [
     isNew: false,
     createdAt: '2023-11-25',
   },
-]
+  // ======== منتجات جديدة من الصور المحلية ========
+  {
+    id: 101,
+    name: 'طقم ملابس أطفال صيفي',
+    slug: 'kids-summer-outfit-set',
+    description: 'طقم ملابس أطفال مريح وعصري للصيف، قطن 100%',
+    longDescription: `
+      طقم ملابس أطفال صيفي مصنوع من القطن الطبيعي 100%.
+      مريح وناعم على بشرة الأطفال.
+      ألوان زاهية ثابتة لا تبهت مع الغسيل.
+      مناسب للعب والنزهات الصيفية.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0009.jpg',
+      '/products/IMG-20260102-WA0010.jpg',
+    ],
+    price: 149,
+    salePrice: 99,
+    currency: 'AED',
+    category: categories[2], // أزياء نسائية (سنغيرها للأطفال)
+    vendor: vendors[1],
+    rating: 4.7,
+    reviewCount: 45,
+    stock: 80,
+    sku: 'KIDS-SUM-001',
+    variants: {
+      colors: [
+        { name: 'أزرق', value: '#4169E1' },
+        { name: 'وردي', value: '#FF69B4' },
+        { name: 'أخضر', value: '#32CD32' },
+      ],
+      sizes: ['2-3 سنوات', '4-5 سنوات', '6-7 سنوات', '8-9 سنوات'],
+    },
+    features: ['قطن 100%', 'مريح', 'ألوان ثابتة', 'سهل الغسيل'],
+    tags: ['جديد', 'خصم'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 102,
+    name: 'فستان سهرة أنيق',
+    slug: 'elegant-evening-dress',
+    description: 'فستان سهرة فاخر بتصميم عصري مناسب للمناسبات',
+    longDescription: `
+      فستان سهرة أنيق بتصميم راقٍ.
+      قماش فاخر مع تطريز يدوي.
+      مناسب للحفلات والمناسبات الخاصة.
+      قصة تبرز جمال القوام.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0011.jpg',
+      '/products/IMG-20260102-WA0012.jpg',
+      '/products/IMG-20260102-WA0013.jpg',
+    ],
+    price: 899,
+    salePrice: 649,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.9,
+    reviewCount: 78,
+    stock: 25,
+    sku: 'DRESS-EVE-001',
+    variants: {
+      colors: [
+        { name: 'أسود', value: '#000000' },
+        { name: 'أحمر', value: '#DC143C' },
+        { name: 'ذهبي', value: '#FFD700' },
+      ],
+      sizes: ['S', 'M', 'L', 'XL'],
+    },
+    features: ['تطريز يدوي', 'قماش فاخر', 'تصميم حصري'],
+    tags: ['فاخر', 'خصم'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 103,
+    name: 'حقيبة يد جلدية فاخرة',
+    slug: 'luxury-leather-handbag',
+    description: 'حقيبة يد نسائية من الجلد الطبيعي بتصميم إيطالي',
+    longDescription: `
+      حقيبة يد فاخرة من الجلد الطبيعي 100%.
+      تصميم إيطالي أنيق وعملي.
+      جيوب داخلية متعددة للتنظيم.
+      سحّاب معدني عالي الجودة.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0014.jpg',
+      '/products/IMG-20260102-WA0015.jpg',
+    ],
+    price: 599,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.8,
+    reviewCount: 92,
+    stock: 40,
+    sku: 'BAG-LTH-001',
+    variants: {
+      colors: [
+        { name: 'بني', value: '#8B4513' },
+        { name: 'أسود', value: '#000000' },
+        { name: 'بيج', value: '#F5F5DC' },
+      ],
+    },
+    features: ['جلد طبيعي', 'تصميم إيطالي', 'جيوب متعددة'],
+    tags: ['فاخر'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 104,
+    name: 'ساعة رجالية كلاسيكية',
+    slug: 'classic-mens-watch',
+    description: 'ساعة يد رجالية بتصميم كلاسيكي أنيق مع حزام جلدي',
+    longDescription: `
+      ساعة رجالية فاخرة بتصميم كلاسيكي خالد.
+      آلية سويسرية دقيقة.
+      حزام جلدي طبيعي مريح.
+      مقاومة للماء حتى 50 متر.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0016.jpg',
+      '/products/IMG-20260102-WA0017.jpg',
+    ],
+    price: 1299,
+    salePrice: 999,
+    currency: 'AED',
+    category: categories[1],
+    vendor: vendors[0],
+    rating: 4.9,
+    reviewCount: 156,
+    stock: 30,
+    sku: 'WATCH-CLS-001',
+    variants: {
+      colors: [
+        { name: 'فضي/بني', value: '#C0C0C0' },
+        { name: 'ذهبي/أسود', value: '#FFD700' },
+      ],
+    },
+    features: ['آلية سويسرية', 'جلد طبيعي', 'مقاوم للماء'],
+    tags: ['فاخر', 'خصم'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 105,
+    name: 'نظارات شمسية ريبان',
+    slug: 'rayban-sunglasses',
+    description: 'نظارات شمسية أصلية بعدسات مستقطبة وحماية UV400',
+    longDescription: `
+      نظارات شمسية أصلية من ريبان.
+      عدسات مستقطبة تقلل الوهج.
+      حماية كاملة من الأشعة فوق البنفسجية UV400.
+      إطار خفيف ومريح للاستخدام اليومي.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0018.jpg',
+      '/products/IMG-20260102-WA0019.jpg',
+    ],
+    price: 799,
+    salePrice: 599,
+    currency: 'AED',
+    category: categories[1],
+    vendor: vendors[0],
+    rating: 4.7,
+    reviewCount: 203,
+    stock: 60,
+    sku: 'GLASS-RB-001',
+    variants: {
+      colors: [
+        { name: 'أسود', value: '#000000' },
+        { name: 'بني', value: '#8B4513' },
+        { name: 'ذهبي', value: '#FFD700' },
+      ],
+    },
+    features: ['عدسات مستقطبة', 'UV400', 'إطار خفيف'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 106,
+    name: 'عطر عود فاخر',
+    slug: 'luxury-oud-perfume',
+    description: 'عطر عود عربي فاخر برائحة طويلة الأمد',
+    longDescription: `
+      عطر عود فاخر بتركيبة حصرية.
+      مكونات طبيعية 100%.
+      رائحة تدوم طوال اليوم.
+      تصميم زجاجة فاخر.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0020.jpg',
+      '/products/IMG-20260102-WA0021.jpg',
+    ],
+    price: 450,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[4], // جمال وعناية
+    vendor: vendors[3],
+    rating: 4.9,
+    reviewCount: 312,
+    stock: 45,
+    sku: 'PERF-OUD-001',
+    variants: {
+      sizes: ['50ml', '100ml', '150ml'],
+    },
+    features: ['عود طبيعي', 'تركيز عالي', 'ثبات طويل'],
+    tags: ['فاخر', 'الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 107,
+    name: 'طقم مجوهرات فضية',
+    slug: 'silver-jewelry-set',
+    description: 'طقم مجوهرات من الفضة الإيطالية مع أحجار كريمة',
+    longDescription: `
+      طقم مجوهرات أنيق من الفضة الإيطالية عيار 925.
+      يشمل: قلادة، أقراط، وسوار.
+      أحجار زركون لامعة.
+      مناسب للإهداء والمناسبات.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0022.jpg',
+      '/products/IMG-20260102-WA0023.jpg',
+      '/products/IMG-20260102-WA0024.jpg',
+    ],
+    price: 699,
+    salePrice: 499,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.8,
+    reviewCount: 87,
+    stock: 35,
+    sku: 'JWL-SLV-001',
+    variants: {
+      colors: [
+        { name: 'فضي', value: '#C0C0C0' },
+        { name: 'ذهبي وردي', value: '#B76E79' },
+      ],
+    },
+    features: ['فضة 925', 'أحجار زركون', 'علبة هدايا'],
+    tags: ['خصم', 'هدايا'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 108,
+    name: 'حذاء رياضي نايك',
+    slug: 'nike-sports-shoes',
+    description: 'حذاء رياضي مريح للجري والتمارين اليومية',
+    longDescription: `
+      حذاء رياضي من نايك بتقنية Air Max.
+      نعل مرن يمتص الصدمات.
+      تهوية ممتازة للقدم.
+      مناسب للجري والتمارين.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0025.jpg',
+      '/products/IMG-20260102-WA0026.jpg',
+    ],
+    price: 549,
+    salePrice: 399,
+    currency: 'AED',
+    category: categories[5], // رياضة
+    vendor: vendors[0],
+    rating: 4.6,
+    reviewCount: 245,
+    stock: 100,
+    sku: 'SHOE-NK-001',
+    variants: {
+      colors: [
+        { name: 'أسود/أبيض', value: '#000000' },
+        { name: 'أزرق/رمادي', value: '#4169E1' },
+        { name: 'أحمر/أسود', value: '#DC143C' },
+      ],
+      sizes: ['40', '41', '42', '43', '44', '45'],
+    },
+    features: ['Air Max', 'نعل مرن', 'تهوية عالية'],
+    tags: ['خصم', 'رياضي'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 109,
+    name: 'سماعة بلوتوث JBL',
+    slug: 'jbl-bluetooth-speaker',
+    description: 'سماعة بلوتوث محمولة بصوت قوي ومقاومة للماء',
+    longDescription: `
+      سماعة JBL بلوتوث لاسلكية.
+      صوت ستيريو قوي وواضح.
+      مقاومة للماء والغبار IP67.
+      بطارية تدوم 12 ساعة.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0027.jpg',
+      '/products/IMG-20260102-WA0028.jpg',
+    ],
+    price: 399,
+    salePrice: 299,
+    currency: 'AED',
+    category: categories[0],
+    vendor: vendors[0],
+    rating: 4.7,
+    reviewCount: 178,
+    stock: 70,
+    sku: 'SPK-JBL-001',
+    variants: {
+      colors: [
+        { name: 'أسود', value: '#000000' },
+        { name: 'أزرق', value: '#4169E1' },
+        { name: 'أحمر', value: '#DC143C' },
+        { name: 'أخضر', value: '#228B22' },
+      ],
+    },
+    features: ['IP67', 'بلوتوث 5.1', 'بطارية 12 ساعة'],
+    tags: ['خصم', 'الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 110,
+    name: 'كريم عناية بالبشرة',
+    slug: 'skincare-cream-set',
+    description: 'مجموعة كريمات عناية بالبشرة طبيعية 100%',
+    longDescription: `
+      مجموعة كريمات عناية بالبشرة.
+      مكونات طبيعية وعضوية.
+      مناسب لجميع أنواع البشرة.
+      يشمل: كريم نهاري، ليلي، وسيروم.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0029.jpg',
+      '/products/IMG-20260102-WA0032.jpg',
+    ],
+    price: 299,
+    salePrice: 229,
+    currency: 'AED',
+    category: categories[4],
+    vendor: vendors[3],
+    rating: 4.8,
+    reviewCount: 156,
+    stock: 55,
+    sku: 'SKIN-CRM-001',
+    features: ['طبيعي 100%', 'لجميع البشرات', 'خالي من البارابين'],
+    tags: ['خصم', 'طبيعي'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 111,
+    name: 'قهوة عربية فاخرة',
+    slug: 'premium-arabic-coffee',
+    description: 'قهوة عربية بالهيل والزعفران من أجود الأنواع',
+    longDescription: `
+      قهوة عربية فاخرة محمصة بعناية.
+      ممزوجة بالهيل والزعفران.
+      حبوب 100% أرابيكا.
+      تحميص متوسط للنكهة المثالية.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0033.jpg',
+      '/products/IMG-20260102-WA0034.jpg',
+    ],
+    price: 89,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[3], // منزل ومطبخ
+    vendor: vendors[2],
+    rating: 4.9,
+    reviewCount: 423,
+    stock: 200,
+    sku: 'COFFE-ARB-001',
+    variants: {
+      sizes: ['250g', '500g', '1kg'],
+    },
+    features: ['أرابيكا 100%', 'بالهيل والزعفران', 'تحميص طازج'],
+    tags: ['الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 112,
+    name: 'طقم أواني طبخ',
+    slug: 'cooking-pots-set',
+    description: 'طقم أواني طبخ ستانلس ستيل عالي الجودة 10 قطع',
+    longDescription: `
+      طقم أواني طبخ من الستانلس ستيل.
+      10 قطع متنوعة الأحجام.
+      مقابض عازلة للحرارة.
+      مناسب لجميع أنواع المواقد.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0035.jpg',
+      '/products/IMG-20260102-WA0036.jpg',
+    ],
+    price: 599,
+    salePrice: 449,
+    currency: 'AED',
+    category: categories[3],
+    vendor: vendors[2],
+    rating: 4.6,
+    reviewCount: 89,
+    stock: 40,
+    sku: 'COOK-SET-001',
+    features: ['ستانلس ستيل', '10 قطع', 'مقابض عازلة'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 113,
+    name: 'لعبة تعليمية للأطفال',
+    slug: 'educational-kids-toy',
+    description: 'لعبة تعليمية تفاعلية لتنمية مهارات الأطفال',
+    longDescription: `
+      لعبة تعليمية تفاعلية.
+      تنمي المهارات الحركية والذهنية.
+      آمنة ومصنوعة من مواد غير سامة.
+      مناسبة للأعمار 3-8 سنوات.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0037.jpg',
+      '/products/IMG-20260102-WA0038.jpg',
+    ],
+    price: 149,
+    salePrice: 99,
+    currency: 'AED',
+    category: categories[7], // ألعاب
+    vendor: vendors[2],
+    rating: 4.7,
+    reviewCount: 134,
+    stock: 85,
+    sku: 'TOY-EDU-001',
+    features: ['تعليمية', 'آمنة', 'تفاعلية'],
+    tags: ['خصم', 'أطفال'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 114,
+    name: 'كتاب تطوير الذات',
+    slug: 'self-development-book',
+    description: 'كتاب ملهم لتطوير الذات وتحقيق النجاح',
+    longDescription: `
+      كتاب تطوير ذات من أكثر الكتب مبيعاً.
+      نصائح عملية للنجاح.
+      قصص ملهمة حقيقية.
+      ترجمة احترافية.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0039.jpg',
+      '/products/IMG-20260102-WA0040.jpg',
+    ],
+    price: 79,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[6], // كتب
+    vendor: vendors[2],
+    rating: 4.8,
+    reviewCount: 267,
+    stock: 150,
+    sku: 'BOOK-DEV-001',
+    features: ['أكثر مبيعاً', 'ترجمة احترافية'],
+    tags: ['الأكثر مبيعاً'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 115,
+    name: 'جهاز تمارين منزلي',
+    slug: 'home-fitness-equipment',
+    description: 'جهاز تمارين منزلي متعدد الوظائف للياقة البدنية',
+    longDescription: `
+      جهاز تمارين منزلي شامل.
+      يشمل تمارين الصدر، الظهر، الأرجل.
+      سهل التركيب والاستخدام.
+      مصنوع من الفولاذ المقوى.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0041.jpg',
+      '/products/IMG-20260102-WA0042.jpg',
+    ],
+    price: 1499,
+    salePrice: 1199,
+    currency: 'AED',
+    category: categories[5],
+    vendor: vendors[0],
+    rating: 4.5,
+    reviewCount: 67,
+    stock: 20,
+    sku: 'FIT-EQP-001',
+    features: ['متعدد الوظائف', 'فولاذ مقوى', 'سهل التركيب'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 116,
+    name: 'شنطة سفر بعجلات',
+    slug: 'travel-luggage-trolley',
+    description: 'شنطة سفر بعجلات متينة وخفيفة الوزن',
+    longDescription: `
+      شنطة سفر بعجلات 360 درجة.
+      خامة ABS متينة وخفيفة.
+      قفل TSA معتمد.
+      مقاسات متعددة.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0043.jpg',
+      '/products/IMG-20260102-WA0044.jpg',
+    ],
+    price: 399,
+    salePrice: 299,
+    currency: 'AED',
+    category: categories[3],
+    vendor: vendors[1],
+    rating: 4.6,
+    reviewCount: 123,
+    stock: 50,
+    sku: 'BAG-TRV-001',
+    variants: {
+      colors: [
+        { name: 'أسود', value: '#000000' },
+        { name: 'أزرق', value: '#4169E1' },
+        { name: 'رمادي', value: '#808080' },
+      ],
+      sizes: ['صغير', 'متوسط', 'كبير'],
+    },
+    features: ['عجلات 360°', 'ABS متين', 'قفل TSA'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 117,
+    name: 'مكياج كامل طقم',
+    slug: 'complete-makeup-set',
+    description: 'طقم مكياج كامل للمبتدئين والمحترفين',
+    longDescription: `
+      طقم مكياج شامل يحتوي على كل ما تحتاجينه.
+      ألوان متنوعة تناسب جميع ألوان البشرة.
+      منتجات عالية الجودة.
+      حقيبة تنظيم عملية.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0045.jpg',
+      '/products/IMG-20260102-WA0046.jpg',
+      '/products/IMG-20260102-WA0047.jpg',
+    ],
+    price: 349,
+    salePrice: 249,
+    currency: 'AED',
+    category: categories[4],
+    vendor: vendors[3],
+    rating: 4.7,
+    reviewCount: 189,
+    stock: 65,
+    sku: 'MKP-SET-001',
+    features: ['طقم كامل', 'ألوان متنوعة', 'حقيبة تنظيم'],
+    tags: ['خصم', 'الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 118,
+    name: 'سجادة صلاة فاخرة',
+    slug: 'premium-prayer-rug',
+    description: 'سجادة صلاة فاخرة بنقوش إسلامية أنيقة',
+    longDescription: `
+      سجادة صلاة فاخرة بتصميم إسلامي.
+      خامة ناعمة ومريحة.
+      حجم مناسب للصلاة.
+      ألوان متعددة.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0048.jpg',
+      '/products/IMG-20260102-WA0049.jpg',
+    ],
+    price: 129,
+    salePrice: null,
+    currency: 'AED',
+    category: categories[3],
+    vendor: vendors[2],
+    rating: 4.9,
+    reviewCount: 345,
+    stock: 200,
+    sku: 'RUG-PRA-001',
+    variants: {
+      colors: [
+        { name: 'أخضر', value: '#228B22' },
+        { name: 'أزرق', value: '#4169E1' },
+        { name: 'بني', value: '#8B4513' },
+      ],
+    },
+    features: ['نقوش إسلامية', 'ناعمة', 'مريحة'],
+    tags: ['الأكثر مبيعاً'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 119,
+    name: 'طابعة ليزر HP',
+    slug: 'hp-laser-printer',
+    description: 'طابعة ليزر سريعة للمكاتب والمنازل',
+    longDescription: `
+      طابعة HP ليزر لاسلكية.
+      طباعة سريعة حتى 30 صفحة/دقيقة.
+      واي فاي وبلوتوث.
+      اقتصادية في استهلاك الحبر.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0050.jpg',
+      '/products/IMG-20260102-WA0051.jpg',
+    ],
+    price: 899,
+    salePrice: 749,
+    currency: 'AED',
+    category: categories[0],
+    vendor: vendors[0],
+    rating: 4.5,
+    reviewCount: 78,
+    stock: 30,
+    sku: 'PRINT-HP-001',
+    features: ['واي فاي', '30 صفحة/دقيقة', 'اقتصادية'],
+    tags: ['خصم'],
+    featured: false,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
+  {
+    id: 120,
+    name: 'عباية مطرزة فاخرة',
+    slug: 'embroidered-abaya',
+    description: 'عباية نسائية مطرزة بتصميم عصري وأنيق',
+    longDescription: `
+      عباية فاخرة بتطريز يدوي.
+      قماش كريب عالي الجودة.
+      تصميم عصري يناسب جميع المناسبات.
+      قصة مريحة وأنيقة.
+    `,
+    images: [
+      '/products/IMG-20260102-WA0052.jpg',
+      '/products/IMG-20260102-WA0053.jpg',
+      '/products/IMG-20260102-WA0054.jpg',
+    ],
+    price: 599,
+    salePrice: 449,
+    currency: 'AED',
+    category: categories[2],
+    vendor: vendors[1],
+    rating: 4.9,
+    reviewCount: 234,
+    stock: 45,
+    sku: 'ABYA-EMB-001',
+    variants: {
+      colors: [
+        { name: 'أسود', value: '#000000' },
+        { name: 'كحلي', value: '#000080' },
+        { name: 'بني غامق', value: '#3D2914' },
+      ],
+      sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    },
+    features: ['تطريز يدوي', 'كريب فاخر', 'تصميم عصري'],
+    tags: ['خصم', 'فاخر'],
+    featured: true,
+    isNew: true,
+    createdAt: '2026-01-02',
+  },
 
 // Reviews
 export const reviews = [
