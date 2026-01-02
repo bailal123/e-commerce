@@ -134,6 +134,7 @@ const ProductCard = ({
           src={image || images?.[0]}
           alt={name}
           aspectRatio="aspect-product"
+          objectFit="object-contain"
           className="group-hover:scale-105 transition-transform duration-500"
         />
       </Link>
